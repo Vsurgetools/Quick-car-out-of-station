@@ -1,0 +1,9 @@
+# Cloudflare config — static website (assets-only Worker)
+# Iski wajah se `npx wrangler deploy` poori site ko static assets ke
+# roop me serve karta hai (koi backend/Worker code nahi).
+
+name = "quick-car-out-of-station"
+compatibility_date = "2024-12-01"
+
+[assets]
+directory = "."
