@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap (deploy ke baad apna asli domain daal dena)
+Sitemap: https://www.quickcaroutofstation.com/sitemap.xml

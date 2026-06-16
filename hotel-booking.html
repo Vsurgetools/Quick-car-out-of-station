@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel Booking at Best Rates — India & Abroad | Quick Car Out Of Station</title>
+  <meta name="description" content="Book hotels & stays at best negotiated rates — budget to 5-star, resorts & homestays across India and abroad. Tell us your destination on WhatsApp." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-ink bg-cream">
+  <div id="site-header"></div>
+  <main id="page-root"></main>
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/page.js"></script>
+  <script>
+    renderServicePage({
+      hero: {
+        crumb: "Hotel Booking",
+        badge: "🏨 India & Abroad",
+        heading: "Hotels & Stays at",
+        highlight: "Best Rates",
+        sub: "Budget se 5-star, resorts se homestays — verified properties, negotiated rates. Apna destination batao WhatsApp pe.",
+        ctaText: "Book on WhatsApp", ctaWa: "Hotel Booking",
+        bgImage: "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80"
+      },
+      pills: [
+        { icon: "💸", title: "Budget Hotels", desc: "Saaf-suthre, jeb pe halke." },
+        { icon: "⭐", title: "3-Star", desc: "Comfort + value for money." },
+        { icon: "🌟", title: "4 & 5-Star", desc: "Premium luxury stays." },
+        { icon: "🏝️", title: "Resorts & Homestays", desc: "Vacation feel ke liye." }
+      ],
+      cards: {
+        eyebrow: "Popular stays", title: "Top Destinations to Stay",
+        subtitle: "Starting prices — exact rate dates pe depend karta hai.",
+        type: "package",
+        items: [
+          { name: "Goa", duration: "Beach", price: "1,499/night", highlights: "Beach-side resorts & budget stays.", img: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80", wa: "Hotel Booking - Goa" },
+          { name: "Manali", duration: "Hills", price: "1,299/night", highlights: "Mountain-view hotels & cottages.", img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80", wa: "Hotel Booking - Manali" },
+          { name: "Nainital", duration: "Lake", price: "1,599/night", highlights: "Lake-view stays in the hills.", img: "https://images.unsplash.com/photo-1597167269787-3e1ba9b1f8a3?auto=format&fit=crop&w=800&q=80", wa: "Hotel Booking - Nainital" },
+          { name: "Nepal", duration: "Abroad", price: "1,999/night", highlights: "Kathmandu & Pokhara hotels.", img: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80", wa: "Hotel Booking - Nepal" },
+          { name: "Bodh Gaya", duration: "Pilgrimage", price: "999/night", highlights: "Hotels near Mahabodhi Temple.", img: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80", wa: "Hotel Booking - Bodh Gaya" },
+          { name: "Deoghar", duration: "Pilgrimage", price: "899/night", highlights: "Stays near Baidyanath Dham.", img: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80", wa: "Hotel Booking - Deoghar" }
+        ]
+      },
+      features: {
+        eyebrow: "Why book with us", title: "Stay Smart, Save More",
+        items: [
+          { i: "💰", t: "Negotiated Rates", d: "Direct tie-ups se sasta price." },
+          { i: "✅", t: "Verified Properties", d: "Sirf trusted, reviewed hotels." },
+          { i: "🛎️", t: "All Categories", d: "Budget se luxury tak sab." },
+          { i: "🗺️", t: "Right Location", d: "Best located stays suggest karte hain." },
+          { i: "🧑‍💼", t: "Personal Help", d: "WhatsApp pe asaan booking." },
+          { i: "🔄", t: "Flexible Options", d: "Free cancellation wale options bhi." }
+        ]
+      },
+      faq: {
+        eyebrow: "Good to know", title: "Hotel Booking FAQs",
+        items: [
+          { q: "Rate kaise pata chalega?", a: "Destination, dates aur kitne log/rooms WhatsApp pe batao — best options price ke saath share karenge." },
+          { q: "Advance payment zaroori hai?", a: "Kuch hotels me advance/booking amount lagta hai, kuch me pay-at-hotel. Booking se pehle bata dete hain." },
+          { q: "Cancellation policy kya hai?", a: "Property ke hisaab se alag hoti hai. Free-cancellation wale options bhi available rehte hain." }
+        ]
+      },
+      cta: { title: "Hotel book karna hai?", subtitle: "Destination aur dates WhatsApp pe bhejo — best stay best rate pe.", wa: "Hotel Booking", button: "Book on WhatsApp" }
+    });
+  </script>
+</body>
+</html>

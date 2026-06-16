@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Outstation Cab Booking from Patna | Quick Car Out Of Station</title>
+  <meta name="description" content="Book outstation cabs from Patna to anywhere in India — Gaya, Bodh Gaya, Nepal, Varanasi, Ranchi, Deoghar. Sedan, SUV, Tempo Traveller. Transparent fare, 24x7. Book on WhatsApp." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-ink bg-cream">
+
+  <div id="site-header"></div>
+
+  <main>
+    <!-- ============ PAGE HERO ============ -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center"
+           style="background-image:url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80')"></div>
+      <div class="absolute inset-0 bg-hero-overlay"></div>
+      <div class="relative max-w-7xl mx-auto px-6 py-20 md:py-28 text-white">
+        <nav class="text-white/70 text-sm mb-4" data-reveal>
+          <a href="index.html" class="hover:text-accent">Home</a> / <span class="text-white">Cab Booking</span>
+        </nav>
+        <div class="max-w-2xl" data-reveal>
+          <span class="inline-block bg-primary text-white text-xs font-semibold px-4 py-1.5 rounded-full mb-4">🚗 Our Flagship Service</span>
+          <h1 class="font-display font-extrabold text-4xl md:text-5xl leading-tight">Outstation Cabs from Patna — <span class="text-accent">Anywhere in India</span></h1>
+          <p class="mt-5 text-lg text-white/90">One-way, round-trip, airport pickup/drop ya local rental — experienced drivers, transparent fare, aur 24x7 support. Bas WhatsApp pe fare maango.</p>
+          <div class="flex flex-wrap gap-3 mt-7">
+            <a data-wa="Cab Booking" class="bg-whatsapp text-white font-bold px-7 py-4 rounded-full shadow-lift hover:scale-105 transition text-lg">💬 Get Fare on WhatsApp</a>
+            <a href="#routes" class="bg-white/10 backdrop-blur border border-white/40 text-white font-semibold px-7 py-4 rounded-full hover:bg-white/20 transition text-lg">Popular Routes</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRIP TYPES ============ -->
+    <section class="max-w-7xl mx-auto px-6 py-14">
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div data-reveal class="bg-white rounded-2xl p-6 shadow-card text-center">
+          <div class="text-4xl mb-3">↔️</div><h3 class="font-display font-bold">One-Way Drop</h3>
+          <p class="text-ink/60 text-sm mt-1">Sirf jaana hai? One-way fare pe paisa bachao.</p>
+        </div>
+        <div data-reveal class="bg-white rounded-2xl p-6 shadow-card text-center">
+          <div class="text-4xl mb-3">🔁</div><h3 class="font-display font-bold">Round Trip</h3>
+          <p class="text-ink/60 text-sm mt-1">Jaana + aana, ek hi cab me aaram se.</p>
+        </div>
+        <div data-reveal class="bg-white rounded-2xl p-6 shadow-card text-center">
+          <div class="text-4xl mb-3">✈️</div><h3 class="font-display font-bold">Airport Transfer</h3>
+          <p class="text-ink/60 text-sm mt-1">Patna airport pickup & drop, on-time guarantee.</p>
+        </div>
+        <div data-reveal class="bg-white rounded-2xl p-6 shadow-card text-center">
+          <div class="text-4xl mb-3">🏙️</div><h3 class="font-display font-bold">Local Rental</h3>
+          <p class="text-ink/60 text-sm mt-1">8hr/80km, 12hr packages — sheher ghoomne ke liye.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAR TYPES ============ -->
+    <section class="bg-white border-y border-black/5">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div id="heading-cars"></div>
+        <div id="cars-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+      </div>
+    </section>
+
+    <!-- ============ POPULAR ROUTES ============ -->
+    <section id="routes" class="max-w-7xl mx-auto px-6 py-16">
+      <div id="heading-routes"></div>
+      <div class="overflow-hidden rounded-2xl shadow-card border border-black/5 bg-white">
+        <table class="w-full text-left">
+          <thead class="bg-ink text-white text-sm">
+            <tr>
+              <th class="px-5 py-4">Route</th>
+              <th class="px-5 py-4 hidden sm:table-cell">Approx Distance</th>
+              <th class="px-5 py-4 text-right">Book</th>
+            </tr>
+          </thead>
+          <tbody id="routes-body" class="divide-y divide-black/5 text-sm"></tbody>
+        </table>
+      </div>
+      <p class="text-ink/50 text-sm mt-3 text-center">Aur bhi routes available — bas WhatsApp pe destination batao, fare turant milega.</p>
+    </section>
+
+    <!-- ============ WHY US (features) ============ -->
+    <section class="bg-white border-y border-black/5">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div id="heading-feat"></div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" id="feat-grid"></div>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO BOOK ============ -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div id="heading-how"></div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div data-reveal class="bg-white rounded-2xl p-7 shadow-card"><div class="text-5xl font-display font-extrabold text-primary/20">1</div><h3 class="font-display font-bold mt-2">Route batao</h3><p class="text-ink/60 text-sm mt-2">"Get Fare on WhatsApp" dabao, pickup–drop & date bhejo.</p></div>
+        <div data-reveal class="bg-white rounded-2xl p-7 shadow-card"><div class="text-5xl font-display font-extrabold text-secondary/20">2</div><h3 class="font-display font-bold mt-2">Fare confirm karo</h3><p class="text-ink/60 text-sm mt-2">Hum best transparent fare batayenge — no hidden charges.</p></div>
+        <div data-reveal class="bg-white rounded-2xl p-7 shadow-card"><div class="text-5xl font-display font-extrabold text-primary/20">3</div><h3 class="font-display font-bold mt-2">Cab ready!</h3><p class="text-ink/60 text-sm mt-2">Time pe driver aa jayega. Happy safe journey 🧡</p></div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="bg-white border-y border-black/5">
+      <div class="max-w-7xl mx-auto px-6 py-16">
+        <div id="heading-faq"></div>
+        <div id="faq-slot"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div id="cta-slot"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+
+  <script>
+    (function () {
+      var C = window.Components;
+
+      C && (document.getElementById("heading-cars").innerHTML =
+        C.sectionHeading({ eyebrow: "Choose your ride", title: "Car Types", subtitle: "Har budget aur group size ke liye." }));
+      document.getElementById("heading-routes").innerHTML =
+        C.sectionHeading({ eyebrow: "Most booked", title: "Popular Routes from Patna" });
+      document.getElementById("heading-feat").innerHTML =
+        C.sectionHeading({ eyebrow: "Why book with us", title: "Aapki Suraksha, Hamari Priority" });
+      document.getElementById("heading-how").innerHTML =
+        C.sectionHeading({ eyebrow: "3 easy steps", title: "Cab Kaise Book Karein" });
+      document.getElementById("heading-faq").innerHTML =
+        C.sectionHeading({ eyebrow: "Good to know", title: "Cab Booking FAQs" });
+
+      // Car types
+      function carCard(c) {
+        return (
+          '<div data-reveal class="bg-cream rounded-2xl overflow-hidden shadow-card hover:shadow-lift hover:-translate-y-1 transition border border-black/5">' +
+            '<div class="h-36 flex items-center justify-center text-6xl bg-white">' + c.icon + '</div>' +
+            '<div class="p-5">' +
+              '<h3 class="font-display font-bold text-lg">' + c.name + '</h3>' +
+              '<p class="text-ink/50 text-xs mt-0.5">' + c.eg + '</p>' +
+              '<div class="flex flex-wrap gap-2 mt-3 text-xs text-ink/70">' +
+                '<span class="bg-primary/10 text-primary px-2 py-1 rounded-full">👥 ' + c.seats + ' seats</span>' +
+                '<span class="bg-secondary/10 text-secondary px-2 py-1 rounded-full">❄️ AC</span>' +
+                '<span class="bg-black/5 px-2 py-1 rounded-full">🧳 ' + c.bags + '</span>' +
+              '</div>' +
+              '<a data-wa="Cab Booking - ' + c.name + '" class="block text-center mt-4 bg-whatsapp text-white font-semibold text-sm px-4 py-2.5 rounded-full">💬 Get Fare</a>' +
+            '</div>' +
+          '</div>'
+        );
+      }
+      document.getElementById("cars-grid").innerHTML = [
+        { name: "Hatchback", eg: "Wagon R, Swift", seats: 4, bags: "2 bags", icon: "🚗" },
+        { name: "Sedan", eg: "Dzire, Etios", seats: 4, bags: "3 bags", icon: "🚙" },
+        { name: "SUV / Innova", eg: "Innova, Ertiga", seats: "6–7", bags: "4 bags", icon: "🚐" },
+        { name: "Tempo Traveller", eg: "12–17 seater", seats: "12+", bags: "Group", icon: "🚌" },
+      ].map(carCard).join("");
+
+      // Routes
+      var routes = [
+        { to: "Patna → Gaya", km: "100 km" },
+        { to: "Patna → Bodh Gaya", km: "115 km" },
+        { to: "Patna → Nepal (Birgunj/Kathmandu)", km: "200+ km" },
+        { to: "Patna → Varanasi", km: "250 km" },
+        { to: "Patna → Ranchi", km: "330 km" },
+        { to: "Patna → Deoghar", km: "280 km" },
+        { to: "Patna → Ayodhya", km: "350 km" },
+        { to: "Patna → Kolkata", km: "580 km" },
+      ];
+      document.getElementById("routes-body").innerHTML = routes.map(function (r) {
+        return (
+          '<tr class="hover:bg-primary/5">' +
+            '<td class="px-5 py-4 font-semibold">' + r.to + '</td>' +
+            '<td class="px-5 py-4 text-ink/60 hidden sm:table-cell">' + r.km + '</td>' +
+            '<td class="px-5 py-4 text-right"><a data-wa="Cab Booking - ' + r.to + '" class="inline-block bg-primary text-white text-sm font-semibold px-4 py-2 rounded-full hover:bg-primary-dark transition">Book →</a></td>' +
+          '</tr>'
+        );
+      }).join("");
+
+      // Features
+      function feat(f) {
+        return '<div data-reveal class="flex gap-4 bg-cream rounded-2xl p-5 border border-black/5"><div class="text-3xl">' + f.i + '</div><div><h3 class="font-display font-bold">' + f.t + '</h3><p class="text-ink/60 text-sm mt-1">' + f.d + '</p></div></div>';
+      }
+      document.getElementById("feat-grid").innerHTML = [
+        { i: "🧑‍✈️", t: "Experienced Drivers", d: "Verified, polite aur route ke expert drivers." },
+        { i: "💰", t: "Transparent Fare", d: "Pehle se clear price, no hidden charges." },
+        { i: "🕒", t: "24x7 Availability", d: "Subah ho ya raat, cab hamesha ready." },
+        { i: "📍", t: "GPS Tracked", d: "Safe travel — live tracking par cabs." },
+        { i: "🧼", t: "Clean & Sanitised", d: "Har trip se pehle gaadi saaf-suthri." },
+        { i: "🤝", t: "On-Time Guarantee", d: "Pickup time ka pura dhyan rakha jaata hai." },
+      ].map(feat).join("");
+
+      // FAQ
+      document.getElementById("faq-slot").innerHTML = C.faqAccordion([
+        { q: "One-way trip me kya extra charge lagta hai?", a: "One-way me sirf chosen distance ka fare lagta hai (driver return allowance kuch routes pe applicable ho sakta hai). Exact fare WhatsApp pe confirm hoga." },
+        { q: "Toll, parking aur state tax kaun dega?", a: "Toll, parking aur state permit/tax aam taur par fare se alag hote hain. Booking ke time hum clearly bata dete hain." },
+        { q: "Night charges hote hain kya?", a: "Late-night ya early-morning trips pe chhota night allowance ho sakta hai. Sab kuch pehle transparent batate hain." },
+        { q: "Cancellation policy kya hai?", a: "Advance cancellation pe koi dikkat nahi. Last-minute cancellation ke liye policy WhatsApp pe share kar di jaati hai." },
+        { q: "Outstation ke liye kitne ghante pehle book karein?", a: "Best rehता hai 4–6 ghante pehle, par hum last-minute bookings bhi try karte hain (availability ke hisaab se)." },
+      ]);
+
+      // CTA
+      document.getElementById("cta-slot").innerHTML =
+        C.ctaBanner({ title: "Patna se kahin bhi jaana hai?", subtitle: "Apna route aur date WhatsApp pe bhejo — best fare turant milega.", wa: "Cab Booking", button: "Get Fare on WhatsApp" });
+
+      window.UI.refresh(document);
+    })();
+  </script>
+</body>
+</html>

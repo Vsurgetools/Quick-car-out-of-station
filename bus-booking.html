@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bus Booking & Bus on Hire from Patna | Quick Car Out Of Station</title>
+  <meta name="description" content="Book bus tickets and hire buses across Bihar & India from Patna. Seater, sleeper, AC Volvo, mini bus for weddings, tours & group travel. Book on WhatsApp." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-ink bg-cream">
+  <div id="site-header"></div>
+  <main id="page-root"></main>
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/page.js"></script>
+  <script>
+    renderServicePage({
+      hero: {
+        crumb: "Bus Booking",
+        badge: "🚌 Across Bihar & India",
+        heading: "Bus Tickets &",
+        highlight: "Bus on Hire",
+        sub: "Seater, sleeper, AC Volvo ya pura bus hire — weddings, group tours aur school trips ke liye. Sab WhatsApp pe.",
+        ctaText: "Book on WhatsApp", ctaWa: "Bus Booking",
+        bgImage: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?auto=format&fit=crop&w=1600&q=80"
+      },
+      pills: [
+        { icon: "🎫", title: "Ticket Booking", desc: "Confirmed bus tickets, har route ke liye." },
+        { icon: "🚌", title: "Bus on Hire", desc: "Pura bus apne group ke liye book karo." },
+        { icon: "💒", title: "Weddings & Tours", desc: "Baraat, group tour, school trip — sab." },
+        { icon: "❄️", title: "AC & Non-AC", desc: "Budget ke hisaab se options." }
+      ],
+      cards: {
+        eyebrow: "Choose your bus", title: "Bus Types",
+        subtitle: "Comfort aur budget — dono ka dhyan.",
+        type: "option",
+        items: [
+          { icon: "💺", name: "Seater", sub: "AC / Non-AC", tags: ["Economical", "Day trips"], wa: "Bus Booking - Seater", cta: "Enquire" },
+          { icon: "🛏️", name: "Sleeper", sub: "AC / Non-AC", tags: ["Overnight", "Comfy"], wa: "Bus Booking - Sleeper", cta: "Enquire" },
+          { icon: "🚍", name: "AC Volvo", sub: "Premium coach", tags: ["Luxury", "Long route"], wa: "Bus Booking - Volvo", cta: "Enquire" },
+          { icon: "🚐", name: "Mini Bus", sub: "20–32 seater", tags: ["Group", "Hire"], wa: "Bus Booking - Mini Bus", cta: "Enquire" }
+        ]
+      },
+      list: {
+        eyebrow: "Most travelled", title: "Popular Bus Routes from Patna",
+        head: ["Route", "Type"],
+        rows: [
+          { label: "Patna → Delhi", meta: "AC Sleeper / Volvo", wa: "Bus Booking - Patna to Delhi" },
+          { label: "Patna → Kolkata", meta: "AC Sleeper", wa: "Bus Booking - Patna to Kolkata" },
+          { label: "Patna → Ranchi", meta: "Seater / Sleeper", wa: "Bus Booking - Patna to Ranchi" },
+          { label: "Patna → Varanasi", meta: "Seater / Sleeper", wa: "Bus Booking - Patna to Varanasi" },
+          { label: "Patna → Gorakhpur", meta: "Sleeper", wa: "Bus Booking - Patna to Gorakhpur" },
+          { label: "Patna → Siliguri", meta: "AC Sleeper", wa: "Bus Booking - Patna to Siliguri" }
+        ],
+        note: "Koi aur route? WhatsApp pe batao, hum arrange kar denge."
+      },
+      features: {
+        eyebrow: "Why book with us", title: "Hassle-Free Bus Travel",
+        items: [
+          { i: "🎫", t: "Confirmed Seats", d: "Best seats, jaldi confirm." },
+          { i: "💰", t: "Best Fares", d: "Competitive prices, no extra markup." },
+          { i: "🚌", t: "Group Hire", d: "Pura bus events & tours ke liye." },
+          { i: "🕒", t: "24x7 Support", d: "Kabhi bhi message karo." },
+          { i: "🧼", t: "Clean Buses", d: "Maintained & sanitised coaches." },
+          { i: "🤝", t: "Reliable Operators", d: "Sirf trusted bus partners." }
+        ]
+      },
+      faq: {
+        eyebrow: "Good to know", title: "Bus Booking FAQs",
+        items: [
+          { q: "Bus on hire ka rate kaise milega?", a: "Apni date, route aur kitne log hain ye WhatsApp pe batao — customised quote turant denge." },
+          { q: "Wedding/baraat ke liye bus mil jayegi?", a: "Bilkul. Mini bus se lekar full coach tak, occasion ke hisaab se arrange karte hain." },
+          { q: "Ticket cancellation hota hai?", a: "Operator ki policy ke hisaab se cancellation/refund possible hai. Booking se pehle clear kar dete hain." }
+        ]
+      },
+      cta: { title: "Bus book karna hai?", subtitle: "Route, date aur seats WhatsApp pe bhejo — best option milega.", wa: "Bus Booking", button: "Book on WhatsApp" }
+    });
+  </script>
+</body>
+</html>

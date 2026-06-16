@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Car Out Of Station — Cabs, Flights, Hotels & Tours from Patna</title>
+  <meta name="description" content="Quick Car Out Of Station — outstation cabs, flight, train, bus & hotel booking, tour, honeymoon & visa packages from Patna, Bihar. Book everything on WhatsApp." />
+  <meta property="og:title" content="Quick Car Out Of Station — Your Journey, Our Responsibility" />
+  <meta property="og:description" content="Cabs, flights, hotels, trains, tours & more from Patna — all one WhatsApp away." />
+
+  <!-- Tailwind (CDN) + theme -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/theme.js"></script>
+
+  <!-- Global styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-ink bg-cream">
+
+  <!-- ===== Global header (injected) ===== -->
+  <div id="site-header"></div>
+
+  <main>
+    <!-- ============ HERO (video background) ============ -->
+    <section class="relative h-[90vh] min-h-[580px] flex items-center overflow-hidden">
+      <!-- Background video. Apna video assets/hero.mp4 me daalo (Phase 8).
+           Tab tak ek royalty-free clip + poster image fallback chal raha hai. -->
+      <video class="hero-video" autoplay muted loop playsinline
+             poster="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80">
+        <source src="assets/hero.mp4" type="video/mp4" />
+        <source src="https://assets.mixkit.co/videos/preview/mixkit-winding-road-in-the-mountains-41464-large.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content max-w-7xl mx-auto px-6 w-full text-white">
+        <div class="max-w-2xl" data-reveal>
+          <span class="inline-block bg-primary/90 text-white text-xs md:text-sm font-semibold px-4 py-1.5 rounded-full mb-5">🧡 Patna · Bihar · Pure India & Abroad</span>
+          <h1 class="font-display font-extrabold text-4xl md:text-6xl leading-tight">
+            Aapka Safar,<br><span class="text-accent">Hamari Zimmedari</span>
+          </h1>
+          <p class="mt-5 text-lg md:text-xl text-white/90">
+            Cabs, flights, hotels, trains, tours & honeymoon packages — sab kuch
+            Patna se, ek WhatsApp message door. No app, no jhanjhat.
+          </p>
+          <div class="flex flex-wrap gap-3 mt-8">
+            <a data-wa="General Enquiry" class="bg-whatsapp text-white font-bold px-7 py-4 rounded-full shadow-lift hover:scale-105 transition flex items-center gap-2 text-lg">💬 Book on WhatsApp</a>
+            <a href="#services" class="bg-white/10 backdrop-blur border border-white/40 text-white font-semibold px-7 py-4 rounded-full hover:bg-white/20 transition text-lg">Explore Services</a>
+          </div>
+
+          <!-- Quick chips -->
+          <div class="mt-8">
+            <p class="text-white/70 text-sm mb-2">Aapko kya chahiye?</p>
+            <div class="flex flex-wrap gap-2">
+              <a href="cab-booking.html" class="chip text-white text-sm font-medium px-4 py-2 rounded-full">🚗 Cab</a>
+              <a href="hotel-booking.html" class="chip text-white text-sm font-medium px-4 py-2 rounded-full">🏨 Hotel</a>
+              <a href="flight-booking.html" class="chip text-white text-sm font-medium px-4 py-2 rounded-full">✈️ Flight</a>
+              <a href="tour-package.html" class="chip text-white text-sm font-medium px-4 py-2 rounded-full">🧳 Tour</a>
+              <a href="honeymoon-package.html" class="chip text-white text-sm font-medium px-4 py-2 rounded-full">💖 Honeymoon</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section id="services" class="max-w-7xl mx-auto px-6 py-16 md:py-20">
+      <div id="heading-services"></div>
+      <div id="services-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4"></div>
+    </section>
+
+    <!-- ============ WHY CHOOSE US ============ -->
+    <section class="bg-white border-y border-black/5">
+      <div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
+        <div id="heading-why"></div>
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div data-reveal class="text-center p-6">
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center text-3xl mb-4">🕒</div>
+            <h3 class="font-display font-bold text-lg">24x7 Support</h3>
+            <p class="text-ink/60 text-sm mt-2">Din ho ya raat, hum hamesha available hain WhatsApp pe.</p>
+          </div>
+          <div data-reveal class="text-center p-6">
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-secondary/10 flex items-center justify-center text-3xl mb-4">💰</div>
+            <h3 class="font-display font-bold text-lg">Best Price</h3>
+            <p class="text-ink/60 text-sm mt-2">Transparent, market se kam daam. No hidden charges.</p>
+          </div>
+          <div data-reveal class="text-center p-6">
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-primary/10 flex items-center justify-center text-3xl mb-4">✅</div>
+            <h3 class="font-display font-bold text-lg">Verified Partners</h3>
+            <p class="text-ink/60 text-sm mt-2">Experienced drivers aur trusted hotels & agents.</p>
+          </div>
+          <div data-reveal class="text-center p-6">
+            <div class="w-16 h-16 mx-auto rounded-2xl bg-whatsapp/10 flex items-center justify-center text-3xl mb-4">💬</div>
+            <h3 class="font-display font-bold text-lg">100% on WhatsApp</h3>
+            <p class="text-ink/60 text-sm mt-2">Koi app download nahi. Seedha chat pe booking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div id="stats-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4"></div>
+    </section>
+
+    <!-- ============ POPULAR DESTINATIONS ============ -->
+    <section class="max-w-7xl mx-auto px-6 py-12 md:py-16">
+      <div id="heading-dest"></div>
+      <div id="dest-track" class="carousel-track" data-carousel="3800"></div>
+    </section>
+
+    <!-- ============ FEATURED PACKAGES ============ -->
+    <section class="bg-white border-y border-black/5">
+      <div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
+        <div id="heading-pkg"></div>
+        <div id="pkg-grid" class="grid gap-6 md:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <!-- ============ HOW IT WORKS ============ -->
+    <section class="max-w-7xl mx-auto px-6 py-16 md:py-20">
+      <div id="heading-how"></div>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div data-reveal class="relative bg-white rounded-2xl p-7 shadow-card">
+          <div class="text-5xl font-display font-extrabold text-primary/20">1</div>
+          <h3 class="font-display font-bold text-lg mt-2">Service chuno</h3>
+          <p class="text-ink/60 text-sm mt-2">Cab, hotel, flight, ya tour — jo chahiye wo select karo.</p>
+        </div>
+        <div data-reveal class="relative bg-white rounded-2xl p-7 shadow-card">
+          <div class="text-5xl font-display font-extrabold text-secondary/20">2</div>
+          <h3 class="font-display font-bold text-lg mt-2">WhatsApp pe message karo</h3>
+          <p class="text-ink/60 text-sm mt-2">Button dabao, pre-filled message bheje, details confirm karo.</p>
+        </div>
+        <div data-reveal class="relative bg-white rounded-2xl p-7 shadow-card">
+          <div class="text-5xl font-display font-extrabold text-primary/20">3</div>
+          <h3 class="font-display font-bold text-lg mt-2">Aaram se travel karo</h3>
+          <p class="text-ink/60 text-sm mt-2">Baaki sab hum sambhal lenge. Happy journey! 🧡</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="bg-white border-y border-black/5">
+      <div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
+        <div id="heading-test"></div>
+        <div id="test-track" class="carousel-track" data-carousel="3500"></div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <div id="cta-slot"></div>
+    </section>
+  </main>
+
+  <!-- ===== Global footer (injected) ===== -->
+  <div id="site-footer"></div>
+
+  <!-- Scripts (order matters) -->
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+
+  <!-- Page render -->
+  <script>
+    (function () {
+      var C = window.Components;
+
+      // Headings
+      document.getElementById("heading-services").innerHTML =
+        C.sectionHeading({ eyebrow: "What we offer", title: "Hamari Services", subtitle: "8 services, ek hi jagah — sab WhatsApp pe book." });
+      document.getElementById("heading-why").innerHTML =
+        C.sectionHeading({ eyebrow: "Why us", title: "Quick Car Out Of Station Kyun?" });
+      document.getElementById("heading-dest").innerHTML =
+        C.sectionHeading({ eyebrow: "Wanderlust", title: "Popular Destinations", subtitle: "Patna se shuru, duniya tak." });
+      document.getElementById("heading-pkg").innerHTML =
+        C.sectionHeading({ eyebrow: "Best sellers", title: "Featured Packages" });
+      document.getElementById("heading-how").innerHTML =
+        C.sectionHeading({ eyebrow: "Simple process", title: "Kaise Kaam Karta Hai" });
+      document.getElementById("heading-test").innerHTML =
+        C.sectionHeading({ eyebrow: "Loved by travellers", title: "Bihar Ke Logon Ki Zubaani" });
+
+      // Services
+      document.getElementById("services-grid").innerHTML =
+        window.SERVICES.map(C.serviceCard).join("");
+
+      // Stats
+      document.getElementById("stats-grid").innerHTML = [
+        { count: 12000, label: "Happy Customers", color: "primary" },
+        { count: 25000, label: "Trips Completed", color: "secondary" },
+        { count: 150,   label: "Cities Covered",  color: "primary" },
+        { count: 8,     label: "Years of Service", color: "secondary" },
+      ].map(C.statCard).join("");
+
+      // Destinations (carousel) — fixed-width wrappers for horizontal scroll
+      var dests = [
+        { name: "Nepal",      price: "8,999",  wa: "Nepal Tour Package",  img: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" },
+        { name: "Manali",     price: "11,499", wa: "Manali Tour Package", img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" },
+        { name: "Goa",        price: "14,999", wa: "Goa Tour Package",    img: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" },
+        { name: "Bodh Gaya",  price: "2,499",  wa: "Bodh Gaya Trip",      img: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" },
+        { name: "Darjeeling", price: "9,999",  wa: "Darjeeling Tour Package", img: "https://images.unsplash.com/photo-1622308644420-b20142dc993c?auto=format&fit=crop&w=800&q=80" },
+        { name: "Varanasi",   price: "3,999",  wa: "Varanasi Trip",       img: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80" },
+        { name: "Kashmir",    price: "16,999", wa: "Kashmir Tour Package", img: "https://images.unsplash.com/photo-1566837497312-7be4a47af84a?auto=format&fit=crop&w=800&q=80" },
+      ];
+      document.getElementById("dest-track").innerHTML =
+        dests.map(function (d) { return '<div class="w-72 md:w-80">' + C.destinationCard(d) + '</div>'; }).join("");
+
+      // Featured packages
+      function pkgCard(p) {
+        return (
+          '<div data-reveal class="bg-cream rounded-2xl overflow-hidden shadow-card hover:shadow-lift hover:-translate-y-1 transition border border-black/5">' +
+            '<div class="h-44 bg-cover bg-center" style="background-image:url(\'' + p.img + '\')"></div>' +
+            '<div class="p-6">' +
+              '<div class="flex items-center justify-between">' +
+                '<h3 class="font-display font-bold text-lg">' + p.name + '</h3>' +
+                '<span class="text-xs font-semibold bg-primary/10 text-primary px-2.5 py-1 rounded-full">' + p.duration + '</span>' +
+              '</div>' +
+              '<p class="text-ink/60 text-sm mt-2">' + p.highlights + '</p>' +
+              '<div class="flex items-center justify-between mt-4">' +
+                '<div><span class="text-ink/50 text-xs">Starting</span><div class="font-display font-extrabold text-primary text-xl">₹' + p.price + '</div></div>' +
+                '<a data-wa="' + p.name + '" class="bg-whatsapp text-white font-semibold text-sm px-4 py-2.5 rounded-full">💬 Enquire</a>' +
+              '</div>' +
+            '</div>' +
+          '</div>'
+        );
+      }
+      document.getElementById("pkg-grid").innerHTML = [
+        { name: "Manali–Shimla", duration: "5N/6D", price: "11,499", highlights: "Snow points, Rohtang, Mall Road + private cab.", img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" },
+        { name: "Goa Beach Holiday", duration: "3N/4D", price: "14,999", highlights: "Beaches, water sports, nightlife + hotel & flights help.", img: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" },
+        { name: "Maldives Honeymoon", duration: "4N/5D", price: "54,999", highlights: "Water villa, candlelight dinner, romantic getaway.", img: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" },
+      ].map(pkgCard).join("");
+
+      // Testimonials
+      document.getElementById("test-track").innerHTML = [
+        { name: "Rahul Kumar", city: "Patna", stars: 5, text: "Patna se Nepal ka trip bahut smooth tha. Driver ekdum professional. Highly recommended!" },
+        { name: "Sneha Gupta", city: "Gaya", stars: 5, text: "Honeymoon package WhatsApp pe customise karwaya — koi jhanjhat nahi, sab perfect." },
+        { name: "Amit Singh", city: "Muzaffarpur", stars: 4, text: "Flight aur hotel dono inhi se book kiya, price market se kam mila." },
+        { name: "Pooja Devi", city: "Bhagalpur", stars: 5, text: "24x7 support sach me kaam karta hai. Raat ko bhi turant reply mila." },
+        { name: "Imran Ali", city: "Patna", stars: 5, text: "Bodh Gaya aur Varanasi ka tour family ke saath — bahut achha arrangement tha." },
+      ].map(C.testimonialCard).join("");
+
+      // CTA
+      document.getElementById("cta-slot").innerHTML =
+        C.ctaBanner({ title: "Apna Safar Aaj Hi Plan Karein", subtitle: "Cab, hotel, flight ya pura tour package — bas ek message bhejein.", wa: "Trip Planning", button: "Book on WhatsApp" });
+
+      // Wire everything
+      window.UI.refresh(document);
+    })();
+  </script>
+</body>
+</html>

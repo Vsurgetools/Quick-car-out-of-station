@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flight Booking from Patna — Domestic & International | Quick Car Out Of Station</title>
+  <meta name="description" content="Book domestic & international flights from Patna at best fares. Group bookings, cheap fare alerts, rescheduling help. Tell us your dates on WhatsApp." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-ink bg-cream">
+  <div id="site-header"></div>
+  <main id="page-root"></main>
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/page.js"></script>
+  <script>
+    renderServicePage({
+      hero: {
+        crumb: "Flight Booking",
+        badge: "✈️ Domestic & International",
+        heading: "Flights at the",
+        highlight: "Best Price",
+        sub: "Apni dates batao WhatsApp pe, hum dhundhenge best fare. Group booking, rescheduling aur cheap fare alerts — sab human support ke saath.",
+        ctaText: "Get Best Fare", ctaWa: "Flight Booking",
+        bgImage: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=1600&q=80"
+      },
+      pills: [
+        { icon: "🇮🇳", title: "Domestic", desc: "Pure India me flights." },
+        { icon: "🌍", title: "International", desc: "Duniya bhar ke destinations." },
+        { icon: "👨‍👩‍👧‍👦", title: "Group Booking", desc: "Family & group ke liye deals." },
+        { icon: "🔔", title: "Fare Alerts", desc: "Sasta fare mile to batate hain." }
+      ],
+      cards: {
+        eyebrow: "What we do", title: "Flight Services",
+        type: "option",
+        items: [
+          { icon: "🛫", name: "Domestic Flights", sub: "All India", tags: ["Best fare", "Instant"], wa: "Flight Booking - Domestic", cta: "Enquire" },
+          { icon: "🌐", name: "International", sub: "Worldwide", tags: ["Visa help too"], wa: "Flight Booking - International", cta: "Enquire" },
+          { icon: "👥", name: "Group Booking", sub: "10+ travellers", tags: ["Special rates"], wa: "Flight Booking - Group", cta: "Enquire" },
+          { icon: "🔄", name: "Reschedule/Cancel", sub: "Help & support", tags: ["Hassle-free"], wa: "Flight Booking - Reschedule", cta: "Enquire" }
+        ]
+      },
+      list: {
+        eyebrow: "From Patna (PAT)", title: "Popular Flight Routes",
+        head: ["Route", "Sector"],
+        rows: [
+          { label: "Patna → Delhi", meta: "Domestic", wa: "Flight Booking - Patna to Delhi" },
+          { label: "Patna → Mumbai", meta: "Domestic", wa: "Flight Booking - Patna to Mumbai" },
+          { label: "Patna → Bangalore", meta: "Domestic", wa: "Flight Booking - Patna to Bangalore" },
+          { label: "Patna → Kolkata", meta: "Domestic", wa: "Flight Booking - Patna to Kolkata" },
+          { label: "Patna → Hyderabad", meta: "Domestic", wa: "Flight Booking - Patna to Hyderabad" },
+          { label: "Patna → Dubai", meta: "International", wa: "Flight Booking - Patna to Dubai" }
+        ],
+        note: "Koi bhi route, koi bhi date — bas WhatsApp pe batao."
+      },
+      features: {
+        eyebrow: "Why book through us", title: "Smart, Simple, Saving",
+        items: [
+          { i: "💰", t: "Best Fare Hunt", d: "Multiple airlines compare karke sasta fare." },
+          { i: "🧑‍💼", t: "Human Support", d: "Bot nahi — asli insaan se baat." },
+          { i: "🚫", t: "No Hidden Fee", d: "Transparent pricing, clear breakup." },
+          { i: "⚡", t: "Fast Booking", d: "Quick confirmation on WhatsApp." },
+          { i: "🔄", t: "Change Support", d: "Date change/cancel me poori help." },
+          { i: "🌍", t: "Visa Combo", d: "International ke saath visa help bhi." }
+        ]
+      },
+      faq: {
+        eyebrow: "Good to know", title: "Flight Booking FAQs",
+        items: [
+          { q: "Fare kaise pata chalega?", a: "WhatsApp pe travel date, sheher aur passengers batao — hum best available fare share karenge." },
+          { q: "Payment kab karna hai?", a: "Fare confirm hone ke baad payment, phir ticket turant issue. Sab transparent." },
+          { q: "Date change ya cancel ho sakta hai?", a: "Haan, airline rules ke hisaab se. Hum poora process handle kar dete hain." }
+        ]
+      },
+      cta: { title: "Flight book karni hai?", subtitle: "Dates aur destination WhatsApp pe bhejo — best fare aapke paas.", wa: "Flight Booking", button: "Get Best Fare" }
+    });
+  </script>
+</body>
+</html>

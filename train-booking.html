@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Train Ticket Booking & Tatkal Help from Patna | Quick Car Out Of Station</title>
+  <meta name="description" content="Train ticket booking and Tatkal assistance from Patna. Confirmed tickets, group & family bookings, waitlist guidance. Share your journey on WhatsApp." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-ink bg-cream">
+  <div id="site-header"></div>
+  <main id="page-root"></main>
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+  <script src="js/page.js"></script>
+  <script>
+    renderServicePage({
+      hero: {
+        crumb: "Train Booking",
+        badge: "🚆 Tickets & Tatkal",
+        heading: "Train Tickets &",
+        highlight: "Tatkal Assistance",
+        sub: "Confirmed ticket chahiye ya Tatkal ka rush — hum help karte hain. Bas journey details WhatsApp pe bhejo.",
+        ctaText: "Book on WhatsApp", ctaWa: "Train Booking",
+        bgImage: "https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=1600&q=80"
+      },
+      pills: [
+        { icon: "✅", title: "Confirmed Tickets", desc: "Best class & berth ki koshish." },
+        { icon: "⚡", title: "Tatkal Help", desc: "Last-minute Tatkal assistance." },
+        { icon: "👨‍👩‍👧", title: "Group / Family", desc: "Saath wali seats ka dhyan." },
+        { icon: "📋", title: "Waitlist Guidance", desc: "Confirm hone ke chances batate hain." }
+      ],
+      cards: {
+        eyebrow: "How we help", title: "Train Services",
+        type: "option",
+        items: [
+          { icon: "🎟️", name: "Confirmed Tickets", sub: "All classes", tags: ["Sleeper", "3AC/2AC"], wa: "Train Booking - Confirmed", cta: "Enquire" },
+          { icon: "⚡", name: "Tatkal Booking", sub: "Next-day travel", tags: ["Fast"], wa: "Train Booking - Tatkal", cta: "Enquire" },
+          { icon: "👪", name: "Group / Family", sub: "Together seats", tags: ["Bulk"], wa: "Train Booking - Group", cta: "Enquire" },
+          { icon: "📊", name: "Waitlist Guidance", sub: "Smart advice", tags: ["Confirm odds"], wa: "Train Booking - Waitlist", cta: "Enquire" }
+        ]
+      },
+      list: {
+        eyebrow: "Most travelled", title: "Popular Train Routes from Patna",
+        head: ["Route", "Type"],
+        rows: [
+          { label: "Patna → New Delhi", meta: "Rajdhani / Sampoorna Kranti", wa: "Train Booking - Patna to New Delhi" },
+          { label: "Patna → Howrah (Kolkata)", meta: "Express", wa: "Train Booking - Patna to Howrah" },
+          { label: "Patna → Mumbai (LTT)", meta: "Express", wa: "Train Booking - Patna to Mumbai" },
+          { label: "Patna → Secunderabad", meta: "Express", wa: "Train Booking - Patna to Secunderabad" },
+          { label: "Patna → Anand Vihar", meta: "Garib Rath / Express", wa: "Train Booking - Patna to Anand Vihar" },
+          { label: "Patna → Bangalore", meta: "Express", wa: "Train Booking - Patna to Bangalore" }
+        ],
+        note: "Koi bhi train ya route — WhatsApp pe batao, hum dekhte hain."
+      },
+      features: {
+        eyebrow: "Why us", title: "Smooth Train Travel",
+        items: [
+          { i: "✅", t: "Better Confirmation", d: "Right train/class chunke chances badhate hain." },
+          { i: "⚡", t: "Tatkal Speed", d: "Rush ke time pe quick try." },
+          { i: "🧑‍💼", t: "Personal Help", d: "WhatsApp pe seedha guidance." },
+          { i: "👪", t: "Family First", d: "Saath ki seats arrange karne ki koshish." },
+          { i: "🔔", t: "Status Updates", d: "PNR/waitlist pe update dete hain." },
+          { i: "🤝", t: "Honest Advice", d: "Confirm na ho to alternatives batate hain." }
+        ]
+      },
+      faq: {
+        eyebrow: "Good to know", title: "Train Booking FAQs",
+        items: [
+          { q: "Kya confirm ticket guarantee hai?", a: "Availability ke hisaab se best koshish karte hain. Tatkal/waitlist me confirmation IRCTC rules pe depend karta hai — hum honestly chances batate hain." },
+          { q: "Tatkal ke liye kab batana hai?", a: "Tatkal ek din pehle khulta hai. Journey se 1–2 din pehle details de do taaki hum ready rahein." },
+          { q: "Kaun si details chahiye?", a: "Date, from–to station, kitne passengers aur preferred class. Bas itna WhatsApp pe bhej do." }
+        ]
+      },
+      cta: { title: "Train ticket chahiye?", subtitle: "Journey details WhatsApp pe bhejo — hum baaki sambhal lete hain.", wa: "Train Booking", button: "Book on WhatsApp" }
+    });
+  </script>
+</body>
+</html>

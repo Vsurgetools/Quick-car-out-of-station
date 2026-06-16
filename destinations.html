@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Destinations — Quick Car Out Of Station</title>
+  <meta name="description" content="Explore popular destinations from Patna — hill stations, beaches, pilgrimage sites & international getaways. Nepal, Manali, Goa, Kashmir, Dubai & more." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-body text-ink bg-cream">
+  <div id="site-header"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="relative overflow-hidden">
+      <div class="absolute inset-0 bg-cover bg-center" style="background-image:url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1600&q=80')"></div>
+      <div class="absolute inset-0 bg-hero-overlay"></div>
+      <div class="relative max-w-7xl mx-auto px-6 py-20 md:py-24 text-white">
+        <nav class="text-white/70 text-sm mb-4" data-reveal><a href="index.html" class="hover:text-accent">Home</a> / <span class="text-white">Destinations</span></nav>
+        <div class="max-w-2xl" data-reveal>
+          <h1 class="font-display font-extrabold text-4xl md:text-5xl leading-tight">Explore <span class="text-accent">Destinations</span></h1>
+          <p class="mt-5 text-lg text-white/90">Patna se shuru, duniya tak. Apni pasand ka destination chuno aur WhatsApp pe enquiry bhejo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTERS + GRID -->
+    <section class="max-w-7xl mx-auto px-6 py-14">
+      <div id="filters" class="flex flex-wrap gap-2 justify-center mb-10"></div>
+      <div id="dest-grid" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+    </section>
+
+    <!-- CTA -->
+    <section class="max-w-7xl mx-auto px-6 pb-16">
+      <div id="cta-slot"></div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/whatsapp.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/components.js"></script>
+
+  <script>
+    (function () {
+      var DESTINATIONS = [
+        { name: "Nepal",      cat: "International", price: "8,999",  img: "https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80" },
+        { name: "Dubai",      cat: "International", price: "39,999", img: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80" },
+        { name: "Thailand",   cat: "International", price: "34,999", img: "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?auto=format&fit=crop&w=800&q=80" },
+        { name: "Bali",       cat: "International", price: "44,999", img: "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=800&q=80" },
+        { name: "Maldives",   cat: "Beaches",       price: "54,999", img: "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&w=800&q=80" },
+        { name: "Goa",        cat: "Beaches",       price: "14,999", img: "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80" },
+        { name: "Andaman",    cat: "Beaches",       price: "26,999", img: "https://images.unsplash.com/photo-1589979481223-deb893043163?auto=format&fit=crop&w=800&q=80" },
+        { name: "Manali",     cat: "Hills",         price: "11,499", img: "https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=800&q=80" },
+        { name: "Kashmir",    cat: "Hills",         price: "16,999", img: "https://images.unsplash.com/photo-1566837497312-7be4a47af84a?auto=format&fit=crop&w=800&q=80" },
+        { name: "Darjeeling", cat: "Hills",         price: "9,999",  img: "https://images.unsplash.com/photo-1622308644420-b20142dc993c?auto=format&fit=crop&w=800&q=80" },
+        { name: "Shimla",     cat: "Hills",         price: "15,999", img: "https://images.unsplash.com/photo-1597167269787-3e1ba9b1f8a3?auto=format&fit=crop&w=800&q=80" },
+        { name: "Bodh Gaya",  cat: "Pilgrimage",    price: "2,499",  img: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80" },
+        { name: "Varanasi",   cat: "Pilgrimage",    price: "3,999",  img: "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?auto=format&fit=crop&w=800&q=80" },
+        { name: "Char Dham",  cat: "Pilgrimage",    price: "21,999", img: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80" },
+        { name: "Deoghar",    cat: "Pilgrimage",    price: "2,999",  img: "https://images.unsplash.com/photo-1568454537842-d933259bb258?auto=format&fit=crop&w=800&q=80" },
+        { name: "Kerala",     cat: "Domestic",      price: "18,999", img: "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?auto=format&fit=crop&w=800&q=80" }
+      ];
+      var CATS = ["All", "Domestic", "International", "Hills", "Beaches", "Pilgrimage"];
+
+      function card(d) {
+        return (
+          '<div class="dest-item" data-cat="' + d.cat + '">' +
+            '<div data-reveal class="relative rounded-2xl overflow-hidden shadow-card h-64 bg-cover bg-center group" style="background-image:url(\'' + d.img + '\')">' +
+              '<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>' +
+              '<span class="absolute top-3 left-3 bg-white/90 text-ink text-xs font-semibold px-3 py-1 rounded-full">' + d.cat + '</span>' +
+              '<div class="absolute bottom-0 p-5 text-white w-full">' +
+                '<h3 class="font-display font-bold text-xl">' + d.name + '</h3>' +
+                '<p class="text-white/80 text-sm">Starting ₹' + d.price + '</p>' +
+                '<a data-wa="Destination - ' + d.name + '" class="inline-block mt-3 bg-primary text-white text-sm font-semibold px-4 py-2 rounded-full opacity-0 group-hover:opacity-100 transition">Enquire on WhatsApp</a>' +
+              '</div>' +
+            '</div>' +
+          '</div>'
+        );
+      }
+
+      var grid = document.getElementById("dest-grid");
+      grid.innerHTML = DESTINATIONS.map(card).join("");
+
+      // Filter buttons
+      var filters = document.getElementById("filters");
+      filters.innerHTML = CATS.map(function (c, i) {
+        return '<button data-cat="' + c + '" class="filter-btn px-5 py-2 rounded-full font-semibold text-sm transition ' +
+          (i === 0 ? "bg-primary text-white" : "bg-white text-ink/70 shadow-card hover:text-primary") + '">' + c + '</button>';
+      }).join("");
+
+      filters.addEventListener("click", function (e) {
+        var btn = e.target.closest(".filter-btn");
+        if (!btn) return;
+        var cat = btn.getAttribute("data-cat");
+        // active state
+        filters.querySelectorAll(".filter-btn").forEach(function (b) {
+          b.className = "filter-btn px-5 py-2 rounded-full font-semibold text-sm transition " +
+            (b === btn ? "bg-primary text-white" : "bg-white text-ink/70 shadow-card hover:text-primary");
+        });
+        // filter
+        grid.querySelectorAll(".dest-item").forEach(function (item) {
+          item.style.display = (cat === "All" || item.getAttribute("data-cat") === cat) ? "" : "none";
+        });
+      });
+
+      // CTA
+      document.getElementById("cta-slot").innerHTML =
+        window.Components.ctaBanner({ title: "Pasand aaya koi destination?", subtitle: "WhatsApp pe batao, custom package bana dete hain.", wa: "Destination Enquiry", button: "Plan on WhatsApp" });
+
+      window.UI.refresh(document);
+    })();
+  </script>
+</body>
+</html>
