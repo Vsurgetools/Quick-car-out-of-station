@@ -306,11 +306,19 @@
     var ogImage = "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1200&q=80";
     var url = location.href.split("#")[0];
 
-    // Favicon (SVG)
+    // Favicon (PNG, multiple sizes) + Apple touch icon
     if (!document.head.querySelector('link[rel="icon"]')) {
-      var fav = document.createElement("link");
-      fav.rel = "icon"; fav.type = "image/svg+xml"; fav.href = "favicon.svg";
-      document.head.appendChild(fav);
+      var fav32 = document.createElement("link");
+      fav32.rel = "icon"; fav32.type = "image/png"; fav32.sizes = "32x32"; fav32.href = "images/favicon-32.png";
+      document.head.appendChild(fav32);
+
+      var fav512 = document.createElement("link");
+      fav512.rel = "icon"; fav512.type = "image/png"; fav512.sizes = "512x512"; fav512.href = "images/favicon-512.png";
+      document.head.appendChild(fav512);
+
+      var apple = document.createElement("link");
+      apple.rel = "apple-touch-icon"; apple.href = "images/favicon-180.png";
+      document.head.appendChild(apple);
     }
     // Theme colour (mobile address bar)
     setMeta("name", "theme-color", "#FF6B00");
