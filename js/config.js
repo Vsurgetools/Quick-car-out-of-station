@@ -7,13 +7,12 @@
 
 window.SITE = {
   name: "Quick Car Out Of Station",
-  tagline: "Aapka Safar, Hamari Zimmedari",
+  tagline: "Your Journey, Our Responsibility",
 
-  // --- IMPORTANT: yahan real number daalna (country code ke saath, no +, no spaces) ---
-  // Example India: 919876543210
-  whatsappNumber: "919999999999", // <-- PLACEHOLDER: replace with real WhatsApp number
+  // --- Business WhatsApp number (country code, no +, no spaces) ---
+  whatsappNumber: "919798267721",
 
-  phone: "+91 99999 99999",       // <-- PLACEHOLDER
+  phone: "+91 97982 67721",
   email: "info@quickcaroutofstation.com",
 
   address: "Patna, Bihar, India",
@@ -25,6 +24,6 @@ window.SITE = {
     youtube: "#",
   },
 
-  // Default WhatsApp greeting (service ke hisaab se override hota hai)
-  defaultMessage: "Hi Quick Car Out Of Station, mujhe travel ke baare me enquiry karni hai.",
+  // Default WhatsApp greeting (overridden per service)
+  defaultMessage: "Hi Quick Car Out Of Station, I'd like to make a travel enquiry.",
 };

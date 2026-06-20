@@ -16,11 +16,11 @@
   function buildWhatsAppLink(context) {
     var number = (window.SITE && window.SITE.whatsappNumber) || "";
     var base = (window.SITE && window.SITE.defaultMessage) ||
-      "Hi, mujhe enquiry karni hai.";
+      "Hi, I'd like to make an enquiry.";
 
     var message = context
-      ? "Hi Quick Car Out Of Station, mujhe *" + context +
-        "* ke baare me jaankari chahiye."
+      ? "Hi Quick Car Out Of Station, I'd like to know more about *" + context +
+        "*."
       : base;
 
     return "https://wa.me/" + number + "?text=" + encodeURIComponent(message);

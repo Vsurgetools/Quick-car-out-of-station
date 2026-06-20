@@ -21,7 +21,7 @@
         <nav class="text-white/70 text-sm mb-4" data-reveal><a href="index.html" class="hover:text-accent">Home</a> / <span class="text-white">Contact</span></nav>
         <div class="max-w-2xl" data-reveal>
           <h1 class="font-display font-extrabold text-4xl md:text-5xl leading-tight">Get in <span class="text-accent">Touch</span></h1>
-          <p class="mt-5 text-lg text-white/90">Koi bhi sawaal ho ya booking karni ho — hum 24x7 yahin hain. WhatsApp sabse fast hai!</p>
+          <p class="mt-5 text-lg text-white/90">Have a question or want to book? We’re here 24x7. WhatsApp is the fastest way to reach us!</p>
         </div>
       </div>
     </section>
@@ -32,8 +32,8 @@
         <!-- Big WhatsApp card -->
         <div class="bg-whatsapp rounded-3xl p-8 text-white shadow-lift">
           <div class="text-4xl">💬</div>
-          <h2 class="font-display font-extrabold text-2xl mt-3">WhatsApp Par Message Karein</h2>
-          <p class="text-white/90 mt-2">Sabse tezz tareeka — turant reply, pre-filled message ke saath.</p>
+          <h2 class="font-display font-extrabold text-2xl mt-3">Message Us on WhatsApp</h2>
+          <p class="text-white/90 mt-2">The fastest way — instant reply, with a pre-filled message.</p>
           <a data-wa="General Enquiry" class="inline-block mt-5 bg-white text-whatsapp font-bold px-6 py-3 rounded-full hover:scale-105 transition">Chat Now →</a>
         </div>
 
@@ -56,12 +56,12 @@
 
       <!-- RIGHT: enquiry form (submits to WhatsApp, NO API) -->
       <div data-reveal class="bg-white rounded-3xl p-8 shadow-card border border-black/5">
-        <h2 class="font-display font-extrabold text-2xl">Enquiry Bhejein</h2>
-        <p class="text-ink/60 text-sm mt-1">Form bharein — "Send on WhatsApp" dabate hi aapka message WhatsApp pe khul jayega.</p>
+        <h2 class="font-display font-extrabold text-2xl">Send an Enquiry</h2>
+        <p class="text-ink/60 text-sm mt-1">Fill the form — tap "Send on WhatsApp" and your message opens right in WhatsApp.</p>
         <form id="enquiry-form" class="mt-6 space-y-4">
           <div>
-            <label class="text-sm font-medium">Aapka Naam</label>
-            <input name="name" required type="text" class="w-full mt-1 px-4 py-3 rounded-xl border border-black/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none" placeholder="Naam likhein" />
+            <label class="text-sm font-medium">Your Name</label>
+            <input name="name" required type="text" class="w-full mt-1 px-4 py-3 rounded-xl border border-black/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none" placeholder="Enter your name" />
           </div>
           <div>
             <label class="text-sm font-medium">Phone Number</label>
@@ -83,7 +83,7 @@
           </div>
           <div>
             <label class="text-sm font-medium">Message</label>
-            <textarea name="message" rows="3" class="w-full mt-1 px-4 py-3 rounded-xl border border-black/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none" placeholder="Apni travel detail likhein (date, destination, etc.)"></textarea>
+            <textarea name="message" rows="3" class="w-full mt-1 px-4 py-3 rounded-xl border border-black/10 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none" placeholder="Add your travel details (date, destination, etc.)"></textarea>
           </div>
           <button type="submit" class="w-full bg-whatsapp text-white font-bold py-3.5 rounded-full shadow-card hover:scale-[1.02] transition">💬 Send on WhatsApp</button>
         </form>
@@ -129,7 +129,7 @@
         var f = new FormData(form);
         var msg =
           "Hi Quick Car Out Of Station! 👋%0A%0A" +
-          "*Naam:* " + (f.get("name") || "") + "%0A" +
+          "*Name:* " + (f.get("name") || "") + "%0A" +
           "*Phone:* " + (f.get("phone") || "") + "%0A" +
           "*Service:* " + (f.get("service") || "") + "%0A" +
           "*Message:* " + (f.get("message") || "");

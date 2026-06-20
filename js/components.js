@@ -229,7 +229,7 @@
       return (
         '<section data-reveal class="bg-brand-gradient rounded-3xl px-6 py-12 md:py-14 text-center text-white shadow-lift">' +
           '<h2 class="font-display font-extrabold text-2xl md:text-4xl">' + (opts.title || 'Ready to travel?') + '</h2>' +
-          '<p class="mt-3 text-white/90 max-w-xl mx-auto">' + (opts.subtitle || 'Bas ek message bhejo, baaki hum sambhal lenge.') + '</p>' +
+          '<p class="mt-3 text-white/90 max-w-xl mx-auto">' + (opts.subtitle || 'Just send us a message — we’ll take care of the rest.') + '</p>' +
           '<a data-wa="' + (opts.wa || 'General Enquiry') + '" class="inline-flex items-center gap-2 mt-6 bg-white text-primary font-bold px-7 py-3.5 rounded-full shadow-card hover:scale-105 transition">💬 ' + (opts.button || 'Book on WhatsApp') + '</a>' +
         '</section>'
       );
