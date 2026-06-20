@@ -70,8 +70,8 @@
         '<div class="max-w-7xl mx-auto px-4 md:px-6">' +
           '<div class="flex items-center justify-between h-16 md:h-20">' +
             // Logo
-            '<a href="index.html" class="flex items-center gap-2 font-display font-extrabold text-lg md:text-xl text-ink">' +
-              '<span class="text-2xl">🚗</span><span>Quick Car <span class="text-primary">Out Of Station</span></span>' +
+            '<a href="index.html" class="flex items-center shrink-0">' +
+              '<img src="images/logo.jpg" alt="Quick Car Out Of Station" class="h-10 md:h-14 w-auto" />' +
             '</a>' +
             // Desktop nav
             '<nav class="hidden lg:flex items-center gap-1">' +
@@ -110,7 +110,7 @@
         '<div class="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-4">' +
           // Brand
           '<div>' +
-            '<div class="font-display font-extrabold text-xl flex items-center gap-2"><span class="text-2xl">🚗</span> Quick Car Out Of Station</div>' +
+            '<div class="inline-block bg-white rounded-xl p-2.5"><img src="images/logo.jpg" alt="Quick Car Out Of Station" class="h-9 sm:h-11 w-auto" /></div>' +
             '<p class="text-white/60 text-sm mt-3">' + (SITE.tagline || "") + '</p>' +
             '<p class="text-white/60 text-sm mt-3">Cabs, flights, hotels, trains, tours & more — all from Patna, one WhatsApp away.</p>' +
             '<div class="flex gap-3 mt-4 text-xl">' +
