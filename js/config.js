@@ -26,4 +26,17 @@ window.SITE = {
 
   // Default WhatsApp greeting (overridden per service)
   defaultMessage: "Hi Quick Car Out Of Station, I'd like to make a travel enquiry.",
+
+  // ---------------------------------------------------------------------------
+  // Homepage HERO background videos — these play one after another (auto-cycle).
+  // Put your clips in the assets/ folder and list them here in order.
+  // Example: Maldives clip, Varanasi ghat clip, Manali clip, Goa clip, etc.
+  // Leave empty to use the placeholder video.
+  // ---------------------------------------------------------------------------
+  heroVideos: [
+    // "assets/hero-1.mp4",
+    // "assets/hero-2.mp4",
+    // "assets/hero-3.mp4",
+    // "assets/hero-4.mp4",
+  ],
 };

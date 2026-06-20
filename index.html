@@ -23,13 +23,10 @@
   <main>
     <!-- ============ HERO (video background) ============ -->
     <section class="relative h-[90vh] min-h-[580px] flex items-center overflow-hidden">
-      <!-- Background video. Apna video assets/hero.mp4 me daalo (Phase 8).
-           Tab tak ek royalty-free clip + poster image fallback chal raha hai. -->
-      <video class="hero-video" autoplay muted loop playsinline
-             poster="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80">
-        <source src="assets/hero.mp4" type="video/mp4" />
-        <source src="https://assets.mixkit.co/videos/preview/mixkit-winding-road-in-the-mountains-41464-large.mp4" type="video/mp4" />
-      </video>
+      <!-- Background video(s). Clips are listed in js/config.js -> heroVideos[]
+           and auto-cycle one after another. Poster shows while loading / as fallback. -->
+      <video id="hero-video" class="hero-video" autoplay muted playsinline
+             poster="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1600&q=80"></video>
       <div class="hero-shade"></div>
 
       <div class="hero-content max-w-7xl mx-auto px-6 w-full text-white">
@@ -246,6 +243,45 @@
 
       // Wire everything
       window.UI.refresh(document);
+    })();
+  </script>
+
+  <!-- Hero video auto-cycler -->
+  <script>
+    (function () {
+      var video = document.getElementById("hero-video");
+      if (!video) return;
+
+      var clips = (window.SITE && window.SITE.heroVideos && window.SITE.heroVideos.length)
+        ? window.SITE.heroVideos.slice()
+        : [];
+      // Fallback placeholder if no clips configured yet
+      var fallback = "https://assets.mixkit.co/videos/preview/mixkit-winding-road-in-the-mountains-41464-large.mp4";
+      if (!clips.length) clips = [fallback];
+
+      var i = 0, errors = 0;
+      function playAt(idx) {
+        video.src = clips[idx];
+        video.load();
+        var p = video.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+      // When a clip finishes, play the next (loop back at the end)
+      video.addEventListener("ended", function () {
+        i = (i + 1) % clips.length;
+        playAt(i);
+      });
+      // If a clip fails to load, skip it; if all fail, use the fallback once
+      video.addEventListener("error", function () {
+        errors++;
+        if (errors > clips.length) {
+          if (clips[0] !== fallback) { clips = [fallback]; i = 0; errors = 0; playAt(0); }
+          return;
+        }
+        i = (i + 1) % clips.length;
+        playAt(i);
+      });
+      playAt(0);
     })();
   </script>
 </body>
