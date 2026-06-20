@@ -7,7 +7,8 @@
 
 window.SERVICES = [
   { name: "Cab Booking",        slug: "cab-booking.html",      icon: "🚗", desc: "Outstation cabs from Patna — anywhere in India.", color: "primary" },
-  { name: "Bus Booking",        slug: "bus-booking.html",      icon: "🚌", desc: "Bus tickets & bus on hire for groups.",          color: "secondary" },
+  { name: "Hire Driver",        slug: "hire-driver.html",      icon: "🧑‍✈️", desc: "Professional drivers, all over India.",          color: "secondary" },
+  { name: "Bus Booking",        slug: "bus-booking.html",      icon: "🚌", desc: "Bus tickets & bus on hire for groups.",          color: "primary" },
   { name: "Flight Booking",     slug: "flight-booking.html",   icon: "✈️", desc: "Domestic & international flights at best fare.",  color: "primary" },
   { name: "Train Booking",      slug: "train-booking.html",    icon: "🚆", desc: "Train tickets & Tatkal assistance.",             color: "secondary" },
   { name: "Hotel Booking",      slug: "hotel-booking.html",    icon: "🏨", desc: "Hotels & stays at best negotiated rates.",       color: "primary" },
@@ -23,6 +24,7 @@ window.PACKAGE_SLUGS = ["tour-package.html", "honeymoon-package.html", "visa-for
 window.NAV_PRIMARY = [
   { name: "Home",         slug: "index.html" },
   { name: "Cab",          slug: "cab-booking.html" },
+  { name: "Driver",       slug: "hire-driver.html" },
   { name: "Bus",          slug: "bus-booking.html" },
   { name: "Flight",       slug: "flight-booking.html" },
   { name: "Train",        slug: "train-booking.html" },
